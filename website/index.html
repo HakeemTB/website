@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakeem — Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!--
+    ┌─────────────────────────────────────────────────────────────────┐
+    │  Google Fonts — Space Grotesk (display/headings) +              │
+    │                  Inter (body)                                   │
+    │  Feel free to self-host these once you go live.                 │
+    └─────────────────────────────────────────────────────────────────┘
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- <link  rel='stylesheet' href='/style.css'  type='text/css'  media='all'  /> -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>hakeem</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-text">
+        <p class="hero-eyebrow">// full-stack in progress</p>
+        <h2>Hi, I'm Hakeem<span class="cursor" aria-hidden="true"></span></h2>
+        <p>Just a guy exploring technology — figuring it out while building scalable, user-friendly applications one commit at a time.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hakeem.png" alt="Hakeem">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Developing into a full-stack developer while exploring and implementing AI. Building expertise in JavaScript, React, Node.js, and Python. Passionate about using technology to solve real-world problems.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills I'm Developing</h2>
+      <div class="skills-grid">
+        <div class="skill"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+        <div class="skill"><i class="fas fa-robot"></i><h3>AI</h3></div>
+        <div class="skill"><i class="fab fa-node"></i><h3>Node.js</h3></div>
+        <div class="skill"><i class="fab fa-python"></i><h3>Python</h3></div>
+        <div class="skill"><i class="fas fa-database"></i><h3>SQL</h3></div>
+        <div class="skill"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
+        <div class="skill"><i class="fab fa-robot"></i><h3>AI English</h3></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="section-copy">A quick look at work I’ve been building across web, software, games, and AI.</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Responsive company interns portfolio site with a clean dark interface, custom navigation, and contact form integration.</p>
+          <a href="https://toko-academy-interns-portfolio-k449.vercel.app/" class="project-link">View project</a>
+        </article>
+        <article class="project-card">
+          <h3>Blogs</h3>
+          <p>I write blogs to document my learning process and journey while sharing knowledge gained.</p>
+          <a href="#" class="project-link">View project</a>
+        </article>
+        <article class="project-card">
+          <h3>Task Manager App</h3>
+          <p>Task tracking interface built for productivity, featuring smart filters and polished UI interactions.</p>
+          <a href="#" class="project-link">View project</a>
+        </article>
+        <article class="project-card">
+          <h3>AI Assistant</h3>
+          <p>Experimental AI model interface designed to improve workflows and automate routine tasks.</p>
+          <a href="#" class="project-link">View project</a>
+        </article>
+        <article class="project-card">
+          <h3>Game Prototype</h3>
+          <p>A lightweight browser game prototype that highlights creativity, animation, and player feedback loops.</p>
+          <a href="#" class="project-link">View project</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-actions">
+        <p>Send me a message via:</p>
+        <div class="contact-icons">
+          <button class="contact-icon" data-action="email" aria-label="Email">
+            <a class="contact-icon" href="mailto:hakeemtony02@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </button>
+          <a class="contact-icon" href="https://www.linkedin.com/in/hakeem-tony-ben-916061355/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="contact-icon" href="#" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+      <h3 id="contact-modal-title">Send a message</h3>
+      <form id="contact-modal-form" novalidate>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <div style="display:flex;gap:0.75rem;align-items:center;margin-top:0.75rem;">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="button" class="btn" data-close>Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Hakeem. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/hakeem-tony-ben-916061355/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BRwpTypMmTxa39ooR9fnPJQ%3D%3D" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/HakeemTB" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="contact_form.js"></script>
+</body>
+</html>
